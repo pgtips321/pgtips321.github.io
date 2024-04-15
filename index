@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="./Resources/css/index.css" type="text/css" rel="stylesheet">
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="C:\Users\Paul Glynn\Desktop\Projects\Language Website\quiz.html">Quiz</a></li>
+            <li><a href="gallery.html">Other famous Adams</a></li>
+            <li><a href="https://elearningindustry.com/planning-build-online-language-learning-platform-need-know">How to make a website?</a></li>
+        </ul>
+    </nav>
+
+
+
+    <title>Adams Face</title>
+</head>
+
+<body>
+    <h1>Finding Adam</h1>
+    <button id="showimage">Show Adam's Face</button>
+      <img id="my-image" src="C:\Users\Paul Glynn\Desktop\Projects\Language Website\Adam.png" style="display: none;">
+    <script>
+      const showImageButton = document.getElementById("showimage");
+      const myImage = document.getElementById("my-image");
+      showImageButton.addEventListener("click", () => {
+         myImage.style.display = "block";
+      });
+    </script>
+
+   
+        <p>
+            Imagine a sleek, user-friendly interface with a simple button labeled "Show Adam's Face." This button, once pressed, reveals a digital display of Adam's face, meticulously rendered. The concept behind this button is rooted in the seamless integration of user interaction and technology. By pressing this seemingly ordinary button, users are granted a peek into a virtual representation of Adam, perhaps for identification purposes or as part of a larger interactive system.
+
+            The button itself is designed with a modern aesthetic, featuring a minimalist look with clean lines and a tactile surface, ensuring a satisfying user experience. The immediate feedback upon activation not only showcases technological efficiency but also enhances user engagement by delivering a direct result—Adam's face appears on the screen, clear and vivid.
+
+            This functionality could be especially useful in scenarios where facial recognition is necessary, such as accessing personalized settings on a device or entering a secured area. The simplicity of a single button press to achieve this reflects an elegant solution to complex identification processes, making technology more accessible and user-friendly.
+
+
+        </p>
+
+
+</body>
+</html>
 
