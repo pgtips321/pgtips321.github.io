@@ -1,1 +1,93 @@
+/* Applying a general background to the body */
+body {
+	background-color: #f5f5dc; /* A beige color, similar to aged paper */
+	background-image: url('https://example.com/old-paper-texture.jpg'); /* Placeholder for a paper texture image */
+	background-size: cover; /* Ensures the background covers the entire body */
+	background-attachment: fixed; /* Keeps the background fixed during scrolling */
+}
 
+/* Other styles remain unchanged */
+* {
+	font-family: 'Comic Sans MS', Courier, monospace;
+	color: #333;
+}
+
+h1 {
+	text-align: center; /* Centers the text horizontally */
+	color: #cc0000;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #aaa;
+}
+
+p,
+li {
+	font-size: 18px;
+	line-height: 1.5;
+	text-shadow: 1px 1px 0px #eee;
+}
+
+a {
+	text-decoration: none;
+	color: #0066cc;
+	border-bottom: 1px dotted #0066cc;
+	transition: color 0.3s ease;
+}
+
+	a:hover {
+		color: #ff3333;
+	}
+
+button {
+	display: block; /* Ensures the button is a block element */
+	margin: 20px auto; /* Centers the button and provides some space around it */
+	width: 100px; /* Sets the width of the button */
+	height: 100px; /* Sets the height of the button */
+	background-color: red; /* Sets the background color to red */
+	color: white; /* Sets the text color to white */
+	border: none; /* Removes the border */
+	border-radius: 50%; /* Makes the button round */
+	font-size: 16px; /* Sets the font size */
+	cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+	transition: transform 0.3s ease; /* Smooth transition for effects */
+}
+
+	button:hover {
+		transform: scale(1.1); /* Slightly enlarges the button when hovered */
+	}
+
+img {
+	display: block;
+	margin: auto; /* Centers the image horizontally */
+	max-width: 100%; /* Ensures the image is responsive and fits within the viewport */
+}
+
+
+
+
+/* Reset list styles */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #c90772; /* Dark background for the nav bar */
+}
+
+/* Style for each nav item */
+nav li {
+	float: left;
+}
+
+/* Nav links styling */
+nav a {
+	display: block;
+	color: white; /* Text color */
+	text-align: center;
+	padding: 14px 16px; /* Padding for spacing */
+	text-decoration: none; /* Removes underline */
+}
+
+	/* Hover effects for nav links */
+	nav a:hover {
+		background-color: #0066cc; /* Darker shade for hover */
+	}
