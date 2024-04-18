@@ -1,93 +1,85 @@
-/* Applying a general background to the body */
+/* Applying a subtle background to the body */
 body {
-	background-color: #f5f5dc; /* A beige color, similar to aged paper */
-	background-image: url('https://example.com/old-paper-texture.jpg'); /* Placeholder for a paper texture image */
-	background-size: cover; /* Ensures the background covers the entire body */
-	background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    background-color: #f5f5dc; /* Soft beige color */
+    background-image: url('https://example.com/subtle-paper-texture.jpg'); /* High-quality, subtle paper texture */
+    background-size: cover; /* Ensures the background covers the entire body */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
 }
 
-/* Other styles remain unchanged */
+/* Base styles */
 * {
-	font-family: 'Comic Sans MS', Courier, monospace;
-	color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Professional and modern font */
+    color: #333; /* Soft black for text */
 }
 
 h1 {
-	text-align: center; /* Centers the text horizontally */
-	color: #cc0000;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #aaa;
+    text-align: center; /* Centers the text horizontally */
+    color: #005a9c; /* Deep blue for a professional look */
+    font-weight: bold;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-p,
-li {
-	font-size: 18px;
-	line-height: 1.5;
-	text-shadow: 1px 1px 0px #eee;
+p, li {
+    font-size: 16px; /* Suitable font size for readability */
+    line-height: 1.6; /* Improved line spacing for readability */
+    text-shadow: none; /* Remove text shadow for clarity */
 }
 
 a {
-	text-decoration: none;
-	color: #0066cc;
-	border-bottom: 1px dotted #0066cc;
-	transition: color 0.3s ease;
+    text-decoration: none; /* Removes underline */
+    color: #005a9c; /* Matching deep blue color */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-	a:hover {
-		color: #ff3333;
-	}
+    a:hover {
+        color: #f26d21; /* Soft orange for hover effect */
+    }
 
 button {
-	display: block; /* Ensures the button is a block element */
-	margin: 20px auto; /* Centers the button and provides some space around it */
-	width: 100px; /* Sets the width of the button */
-	height: 100px; /* Sets the height of the button */
-	background-color: red; /* Sets the background color to red */
-	color: white; /* Sets the text color to white */
-	border: none; /* Removes the border */
-	border-radius: 50%; /* Makes the button round */
-	font-size: 16px; /* Sets the font size */
-	cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-	transition: transform 0.3s ease; /* Smooth transition for effects */
+    display: block; /* Ensures the button is a block element */
+    margin: 20px auto; /* Centers the button and provides space around it */
+    width: 150px; /* Appropriate width */
+    height: 40px; /* Appropriate height */
+    background-color: #005a9c; /* Consistent deep blue color */
+    color: white; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Readable font size */
+    cursor: pointer; /* Indicates an interactive element */
+    transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
-	button:hover {
-		transform: scale(1.1); /* Slightly enlarges the button when hovered */
-	}
+    button:hover {
+        background-color: #f26d21; /* Soft orange when hovered */
+    }
 
 img {
-	display: block;
-	margin: auto; /* Centers the image horizontally */
-	max-width: 100%; /* Ensures the image is responsive and fits within the viewport */
+    display: block;
+    margin: auto; /* Center the image horizontally */
+    max-width: 100%; /* Responsive image sizing */
 }
 
-
-
-
-/* Reset list styles */
+/* Navigation styles */
 nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #c90772; /* Dark background for the nav bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Dark grey for professional appearance */
 }
 
-/* Style for each nav item */
 nav li {
-	float: left;
+    float: left;
 }
 
-/* Nav links styling */
 nav a {
-	display: block;
-	color: white; /* Text color */
-	text-align: center;
-	padding: 14px 16px; /* Padding for spacing */
-	text-decoration: none; /* Removes underline */
+    display: block;
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 14px 16px; /* Adequate padding for clickable area */
+    text-decoration: none; /* Removes underline */
 }
 
-	/* Hover effects for nav links */
-	nav a:hover {
-		background-color: #0066cc; /* Darker shade for hover */
-	}
+    nav a:hover {
+        background-color: #005a9c; /* Deep blue on hover */
+    }
