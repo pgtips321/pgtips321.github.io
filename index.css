@@ -8,7 +8,7 @@ body {
 
 /* Base styles */
 * {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Professional and modern font */
+    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont; /* Professional and modern font */
     color: #333; /* Soft black for text */
 }
 
