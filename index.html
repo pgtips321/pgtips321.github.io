@@ -5,6 +5,7 @@
     <title>Dilloningo</title>
 </head>
 <body>
+    
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -27,5 +28,29 @@
             <div class="pupil"></div>
         </div>
     </div>
+
+
+
+    <script>
+document.addEventListener('mousemove', function(event) {
+  const eyes = document.querySelectorAll('.pupil');
+  eyes.forEach(eye => {
+    const { left, top, width, height } = eye.getBoundingClientRect();
+    const eyeCenterX = left + width / 2;
+    const eyeCenterY = top + height / 2;
+    const deltaX = event.clientX - eyeCenterX;
+    const deltaY = event.clientY - eyeCenterY;
+    const angle = Math.atan2(deltaY, deltaX);
+    const distance = Math.min(eye.offsetWidth / 4, Math.sqrt(deltaX**2 + deltaY**2));
+    const eyePupilX = distance * Math.cos(angle);
+    const eyePupilY = distance * Math.sin(angle);
+    eye.style.transform = `translate(${eyePupilX}px, ${eyePupilY}px)`;
+  });
+});
+</script>
+
+
+
+
 </body>
 </html>
