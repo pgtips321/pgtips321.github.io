@@ -1,0 +1,144 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    justify-content: flex-start; /* Aligns children to the start, keeping the navbar at the top */
+    height: 100vh;
+    background-color: #87CEEB;
+}
+
+.app {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px; /*this and 2 above are important for looks */
+  
+}
+
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #e2e2e2;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        border-color: #0066cc;
+    }
+
+    .btn.correct {
+        background-color: green;
+        color: white;
+    }
+
+    .btn.wrong {
+        background-color: red;
+        color: white;
+    }
+
+.hide {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally */
+    justify-content: flex-start; /* Aligns children to the start, keeping the navbar at the top */
+    height: 100vh;
+    background-color: #87CEEB;
+}
+
+nav {
+    width: 100%; /* Ensure the navbar spans the full width */
+    background-color: #3A4856;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centers the navbar items */
+}
+
+nav li {
+    padding: 14px 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover  {
+    background-color: #005a9c;
+}
+
+.app {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 20px; /* Space from navbar */
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #e2e2e2;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: #0066cc;
+}
+#next-btn {
+    background-color: #fbeee0;
+    
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    margin-top: 40px; /* defining where the button is */
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
