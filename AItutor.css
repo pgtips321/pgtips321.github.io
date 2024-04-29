@@ -1,4 +1,4 @@
-﻿/* Import Google font - Poppins */
+/* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
@@ -302,3 +302,27 @@ span.material-symbols-rounded {
         font-size: 1.25rem !important;
     }
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3A4856; /* Dark grey for professional appearance */
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 14px 16px; /* Adequate padding for clickable area */
+    text-decoration: none; /* Removes underline */
+}
+
+    nav a:hover {
+        background-color: #005a9c; /* Deep blue on hover */
+    }
