@@ -5,22 +5,24 @@
     <title>Dilloningo</title>
 </head>
 <body>
-    
+
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="C:\Users\Paul Glynn\Desktop\Projects\Language Website\quiz.html">Quiz</a></li>
-            <li><a href="gallery.html">Other famous Adams</a></li>
-            <li><a href="https://elearningindustry.com/planning-build-online-language-learning-platform-need-know">How to make a website?</a></li>
+            <li><a href="./Intro.html">Intro</a></li>
+            <li><a href="./Test.html">Find Your Level</a></li>
+            <li><a href="https://mycolor.space/?hex=%2387BEEB&sub=1">What is your beautiful palette?</a></li>
         </ul>
     </nav>
 
-    <h1>Learn French!</h1>
+    <h1>Sorry !</h1>
     <p>
-        Learning a new language opens the door to countless joys and enriching experiences...
+        This page is still under development...
+
+        Feel free to navigate elsewhere !
     </p>
     <div class="character-container">
-        <img src="./dodowithouteyes.jpg" alt="Character without eyes">
+        <img src="./dodowitheyes.jpg" alt="Character without eyes">
         <div class="eye" id="left-eye">
             <div class="pupil"></div>
         </div>
@@ -32,22 +34,22 @@
 
 
     <script>
-document.addEventListener('mousemove', function(event) {
-  const eyes = document.querySelectorAll('.pupil');
-  eyes.forEach(eye => {
-    const { left, top, width, height } = eye.getBoundingClientRect();
-    const eyeCenterX = left + width / 2;
-    const eyeCenterY = top + height / 2;
-    const deltaX = event.clientX - eyeCenterX;
-    const deltaY = event.clientY - eyeCenterY;
-    const angle = Math.atan2(deltaY, deltaX);
-    const distance = Math.min(eye.offsetWidth / 4, Math.sqrt(deltaX**2 + deltaY**2));
-    const eyePupilX = distance * Math.cos(angle);
-    const eyePupilY = distance * Math.sin(angle);
-    eye.style.transform = `translate(${eyePupilX}px, ${eyePupilY}px)`;
-  });
-});
-</script>
+        document.addEventListener('mousemove', function (event) {
+            const eyes = document.querySelectorAll('.pupil');
+            eyes.forEach(eye => {
+                const { left, top, width, height } = eye.getBoundingClientRect();
+                const eyeCenterX = left + width / 2;
+                const eyeCenterY = top + height / 2;
+                const deltaX = event.clientX - eyeCenterX;
+                const deltaY = event.clientY - eyeCenterY;
+                const angle = Math.atan2(deltaY, deltaX);
+                const distance = Math.min(eye.offsetWidth / 4, Math.sqrt(deltaX ** 2 + deltaY ** 2));
+                const eyePupilX = distance * Math.cos(angle);
+                const eyePupilY = distance * Math.sin(angle);
+                eye.style.transform = `translate(${eyePupilX}px, ${eyePupilY}px)`;
+            });
+        });
+    </script>
 
 
 
