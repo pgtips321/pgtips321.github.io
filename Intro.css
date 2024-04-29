@@ -1,0 +1,94 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #87CEEB; /* White */
+    padding: 0;
+    color: #3A4856;
+    font-family: 'Roboto', Arial, sans-serif; /* Adds Roboto, with Arial as a fallback */
+
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 20px 10%; /* Adds padding and sets the left and right padding as a percentage of the viewport width */
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%)
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+h1, h2 {
+    font-size: 2em; /* Makes headings larger */
+    font-weight: 700; /* Makes headings thicker */
+}
+
+p {
+    font-size: 1.2em; /* Increases paragraph text size */
+    font-weight: 400; /* Normal weight for readability */
+}
+
+
+
+
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3A4856; /* Dark grey for professional appearance */
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white; /* White text for contrast */
+    text-align: center;
+    padding: 14px 16px; /* Adequate padding for clickable area */
+    text-decoration: none; /* Removes underline */
+}
+
+    nav a:hover {
+        background-color: #005a9c; /* Deep blue on hover */
+    }
+
+
+/* CSS */
+.button-74 {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    margin-top: 40px;      /* defining where the button is */
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
