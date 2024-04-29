@@ -1,112 +1,59 @@
-/* Applying a subtle background to the body */
-body {
-    background-color: #f5f5dc; /* Soft beige color */
-    background-image: url('https://example.com/subtle-paper-texture.jpg'); /* High-quality, subtle paper texture */
-    background-size: cover; /* Ensures the background covers the entire body */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <title>Dilloningo</title>
+</head>
+<body>
 
-/* Base styles */
-* {
-    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont; /* Professional and modern font */
-    color: #333; /* Soft black for text */
-}
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Intro.html">Intro</a></li>
+            <li><a href="./Test.html">Find Your Level</a></li>
+            <li><a href="https://mycolor.space/?hex=%2387BEEB&sub=1">What is your beautiful palette?</a></li>
+        </ul>
+    </nav>
 
-h1 {
-    text-align: center; /* Centers the text horizontally */
-    color: #005a9c; /* Deep blue for a professional look */
-    font-weight: bold;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
+    <h1>Sorry !</h1>
+    <p>
+        This page is still under development...
 
-p, li {
-    font-size: 16px; /* Suitable font size for readability */
-    line-height: 1.6; /* Improved line spacing for readability */
-    text-shadow: none; /* Remove text shadow for clarity */
-}
-
-a {
-    text-decoration: none; /* Removes underline */
-    color: #005a9c; /* Matching deep blue color */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-    a:hover {
-        color: #f26d21; /* Soft orange for hover effect */
-    }
+        Feel free to navigate elsewhere !
+    </p>
+    <div class="character-container">
+        <img src="./dodowitheyes.jpg" alt="Character without eyes">
+        <div class="eye" id="left-eye">
+            <div class="pupil"></div>
+        </div>
+        <div class="eye" id="right-eye">
+            <div class="pupil"></div>
+        </div>
+    </div>
 
 
-/* Navigation styles */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333; /* Dark grey for professional appearance */
-}
 
-nav li {
-    float: left;
-}
-
-nav a {
-    display: block;
-    color: white; /* White text for contrast */
-    text-align: center;
-    padding: 14px 16px; /* Adequate padding for clickable area */
-    text-decoration: none; /* Removes underline */
-}
-
-    nav a:hover {
-        background-color: #005a9c; /* Deep blue on hover */
-    }
-
-.character-container {
-    position: relative;
-    display: inline-block; /* Adjust as necessary */
-}
-
-img {
-    display: block; /* Remove any default spacing/margins */
-    width: 100%; /* Adjust size as needed */
-    height: auto;
-}
-
-.eye {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset 0 0 5px #000a;
-}
-
-
-.pupil {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 50%;
-    /* Removed the 'position', 'top', 'left', and 'transform' properties */
-}
-
-
-#left-eye {
-    top: 26.1%; /* Adjust based on your image */
-    left: 24.6%; /* Adjust based on your image */
-}
-
-#right-eye {
-    top: 29%; /* Adjust based on your image */
-    left: 43%; /* Adjust based on your image */
-}
+    <script>
+        document.addEventListener('mousemove', function (event) {
+            const eyes = document.querySelectorAll('.pupil');
+            eyes.forEach(eye => {
+                const { left, top, width, height } = eye.getBoundingClientRect();
+                const eyeCenterX = left + width / 2;
+                const eyeCenterY = top + height / 2;
+                const deltaX = event.clientX - eyeCenterX;
+                const deltaY = event.clientY - eyeCenterY;
+                const angle = Math.atan2(deltaY, deltaX);
+                const distance = Math.min(eye.offsetWidth / 4, Math.sqrt(deltaX ** 2 + deltaY ** 2));
+                const eyePupilX = distance * Math.cos(angle);
+                const eyePupilY = distance * Math.sin(angle);
+                eye.style.transform = `translate(${eyePupilX}px, ${eyePupilY}px)`;
+            });
+        });
+    </script>
 
 
 
 
-
-
+</body>
+</html>
 
